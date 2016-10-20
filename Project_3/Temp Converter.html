@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto }
+fieldset {
+    background-color: crimson; }
+body {
+    background-color: yellow;  }
+
+label:hover {font-size:20px;}
+    </style>
+</head>
+
+
+
+<body>
+        <h2>Temperature Conversion</h2>
+<fieldset>
+        <label>Insert a valid number in the boxes below and then click one of the convert buttons:</label> <br>
+        <br>
+
+        <input type="text" id="celsius" name="celsius"/> <label for="celsius">degrees celsius</label> <br>
+
+    <button type="button" onclick="convertToF();return false">Convert to Fahrenheit</button> <br>
+    <button type="button" onclick="convertToC();return false">Convert to Celsius</button> <br>
+
+        <input type="text" id="fahrenheit" name="fahrenheit"/> <label for="fahrenheit">degrees fahrenheit</label>
+</fieldset>
+<br>
+<img src="thermometer.jpg"/>
+
+<script src="conversion.js"></script>
+
+</body>
+</html>
